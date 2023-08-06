@@ -227,3 +227,13 @@ body{
     height: 20px;
     padding-bottom: 35px;
   }
+
+  @media only screen and (max-width: 480px) {
+  .post-card{
+    width: 80%;
+    height: 85%;
+  }
+  .post-card div{
+    width:90%;
+}
+}
