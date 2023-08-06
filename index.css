@@ -1,0 +1,228 @@
+body{
+    background-image: url("images/bg.png");
+    background-color: #cccccc;
+    font-family: 'Lato';
+}
+
+.nav{
+    width: 90%;
+    height: 7%;
+    padding: 0 5%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1%;
+    font-size: min(90%,22px);
+    text-align: center;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15%;
+    width: min(100%, 500px);
+    align-items: center;
+}
+
+.card-wrapper{
+    position: relative;
+    padding-top: 3%;
+    background-color: rgba(255, 255, 255, 0.321);
+    width: min(100%, 1200px);
+    height: 85.217456817%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.post-card, .edit-form{
+    position: relative;
+    margin-bottom: 3%;
+    padding: 0 3%  min(20%, 70px) 3%;
+    margin-right: 3%;
+    background: rgb(255, 255, 255);
+    width: min(80%, 200px);
+    height: 360px;
+    border-radius: 0.5em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.post-card img{
+    width: 100%;
+    border-radius: 0.5em;
+    align-self: baseline;
+    align-self: flex-end;
+    justify-self: flex-end;
+    justify-self: end;
+    place-self: end;
+    justify-self: last baseline;
+    align-self: last baseline;
+    place-self: last baseline;
+}
+
+.post-card div{
+    position: absolute;
+    bottom: 12;
+    width:74%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-card button, .save{
+    background-color: #e2e2f6;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-weight: 600;
+    font-size: 70%;
+    padding: min(5%, 10px) min(10%, 30px);
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.post-card button:hover, .save:hover{
+    background-color: rgb(206, 202, 241);
+}
+
+.more-btn{
+    margin: 0 40%;
+    margin-bottom: 3%;
+    border: none;
+    background-color: transparent;
+    color: blue;
+    cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #ffffff00;
+    border: 1px solid #cacaca00;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+}
+
+.edit-form{
+    padding: 5px 30px;
+    width: min(70%, 900px);
+    height: min(70%, 700px);
+    font-weight: 500;
+    font-size: min(25px, 6vw);
+    justify-content: space-around;
+}
+
+.form-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b67;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #000000;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+
+  .form__field::placeholder {
+    color: #708bd48a;
+    font-weight:lighter ;
+  }
+
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: #5d5cde;;
+    font-size: 15px;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  .save{
+    color: white;
+    font-weight: 100;
+    background-color: #5d5cde;
+    width: 25%;
+    position: absolute;
+    right: 60;
+    bottom: 35;
+  }
+
+  .save:hover{
+    background-color: rgb(130, 113, 220);
+  }
+
+  .a-id{
+    color: #a6a3a3;
+    font-size: small;
+    position: absolute;
+    top:36 ;
+    right: 40;
+  }
+
+.title{
+    font-size: small;
+    height: 20px;
+    padding-bottom: 35px;
+  }
