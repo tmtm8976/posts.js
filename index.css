@@ -2,6 +2,7 @@ body{
     background-image: url("images/bg.png");
     background-color: #cccccc;
     font-family: 'Lato';
+    overflow: hidden;
 }
 
 .nav{
